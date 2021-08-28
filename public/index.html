@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/0.0.0-f90763a/tailwind.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="TMS.png" type="image/x-icon">
+</head>
+<body class="bg-gray-800 text-gray-300 flex justify-end">
+    <nav class="fixed z-20 w-full md:w-1/12 left-0 h-12 shadow-md md:shadow-none bg-gray-800">
+        <div class=" flex justify-between items-center my-3 mx-5">
+            <h1 class="text-white font-semibold italic text-xl md:text-sm">Siyamtanzeel</h1>
+            <div class="burger  md:hidden relative flex flex-col space-y-1.5 px-2">
+                <div id="line-1" class="relative block bg-gray-300 w-7 h-0.5"></div>
+                <div id="line-2" class="relative block bg-gray-300 w-7 h-0.5"></div>
+                <div id="line-3" class="relative block bg-gray-300 w-7 h-0.5"></div>
+            </div>
+        </div>
+        <div id="menu" class="fixed w-56 md:w-2/12 h-full -inset-x-56 md:left-0 flex flex-col items-center justify-center space-y-10 bg-gray-800 md:bg-opacity-0">
+            <ul id="ul" class="relative w-full flex flex-col space-y-5">
+                <li class="border-r-4 border-red-600"><a href="#" class="text-gray-300 hover:text-white text-md transition ease-in-out duration-300"><i class="fas fa-home px-3"></i> Home </a></li>
+                <li class=""><a href="#one" class="text-gray-300 hover:text-white py-2 text-md transition ease-in-out duration-300"><i class="fas fa-info-circle px-3"></i> About </a></li>
+                <li class=""><a href="#two" class="text-gray-300 hover:text-white py-2 text-md transition ease-in-out duration-300"><i class="fas fa-wrench px-3"></i> Services </a></li>
+                <li class=""><a href="#three" class="text-gray-300 hover:text-white py-2 text-md transition ease-in-out duration-300"><i class="fas fa-blog px-3"></i> Blogs </a></li>
+                <li class=""><a href="#four" class="text-gray-300 hover:text-white py-2 text-md transition ease-in-out duration-300"><i class="fas fa-briefcase px-3"></i> Projects </a></li>
+            </ul>
+            <i class="far fa-lightbulb text-4xl text-white"></i>
+        </div>
+       </nav>
+   <main class="container z-0 absolute md:w-10/12 bg-gray-100">
+       <header class="relative h-5/6 py-10 px-5 flex flex-col md:flex-row-reverse items-center justify-center space-y-5 md:space-y-0">
+        <img src="../src/img/headerbg.webp" alt="" class="absolute w-full h-full top-0 left-0">
+            <!--<div class="mx-auto">
+                <img class="w-56 md:w-72 rounded-full shadow-md" src="../src/img/touann-gatouillat-vergos-kCo-zEqc9IY-unsplash.jpg" alt="">
+            </div> -->
+            <div class="relative flex flex-col space-y-3 items-center justify-center bg-gray-800 bg-opacity-40 md:backdrop-filter backdrop-blur-md rounded-md py-10 px-5">
+                <h1 class="text-gray-200 font-medium text-2xl">I'm, <span class="text-transparent bg-clip-text" id="name">Muhammad Tanzeel</span></h1>
+                <h2 class="text-center text-gray-200 font-medium text-3xl">Front End Web Developer</h2>
+                <p class="text-center text-gray-400 font-light text-md px-5">I build responsive websites and edit Photos intended to be uploaded in social media</p>
+            </div>
+       </header>
+       <section class="flex flex-col items-center justify-center py-10 px-10 space-y-10 bg-gray-900" id="about">
+            <h1 class="font-semibold text-2xl text-gray-200">
+                _______About Me_______
+            </h1>
+            <div class="flex flex-col md:flex-row items-center justify-center lg:w-9/12 bg-gray-800 rounded-full ">
+                <img src="../src/img/touann-gatouillat-vergos-kCo-zEqc9IY-unsplash.jpg" class="my-10 px-10 object-scale-down shadow-inner md:w-80 rounded-full" alt="">
+                <p class="relative py-5 px-4 lg:px-20 lg:py-10 rounded-b-md md:rounded-bl-none md:rounded-tr-md text-center text-gray-300 font-light text-lg bg-black bg-opacity-50 backdrop-filter backdrop-blur-md">A web designer/developer focused on crafting great web experiences. Designing and Coding have been my passion since the days I started working with computers but I found myself into web design/development since 2020. I enjoy creating beautifully designed, intuitive and functional websites.Alongside Web design,I also edit photos in a way that viewers love to see.</p>
+            </div>
+       </section>
+       <section id="services" class="relative flex flex-col items-center justify-center py-5">
+           <img src="../src/img/—Pngtree—dark vector abstract background_1159556.png" alt="" class="absolute w-full h-full top-0 left-0 hidden lg:block">
+           <img src="../src/img/—Pngtree—dark vector abstract background_11595566.png" alt="" class="absolute w-full h-full top-0 left-0 block lg:hidden">
+           <h1 class="relative font-semibold text-2xl text-gray-200 p-5 mb-10 rounded-md shadow-md bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-md">
+               __Services I can Provide__
+           </h1>
+           <div class="cards p-5 flex flex-col items-center justify-center space-y-5">
+                <div class="relative flex flex-col items-center text-center bg-gray-800 bg-opacity-60 backdrop-filter backdrop-blur-md shadow-lg rounded-lg p-6 space-y-5 w-10/12 md:w-8/12">
+                    <h3 class="text-pink-500 text-xl font-semibold">Web Development</h3>
+                    <i class="fas fa-code text-7xl bg-gradient-to-b from-blue-400 to-blue-600 text-transparent bg-clip-text"></i>
+                    <p class="lg:px-10">
+                        Web development is the building and maintenance of websites; it's the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or 'devs', do this by using a variety of coding languages.
+                    </p>
+                </div>
+                <div class="relative flex flex-col items-center text-center bg-gray-800 bg-opacity-60 backdrop-filter backdrop-blur-md shadow-lg rounded-lg p-6 space-y-5 w-10/12 md:w-8/12">
+                    <h3 class="text-pink-500 text-xl font-semibold">Photo Editing</h3>
+                    <i class="fas fa-camera-retro text-7xl bg-gradient-to-b from-blue-400 to-blue-600 text-transparent bg-clip-text"></i>
+                    <p class="lg:px-10">
+                        Editing photos in an aesthetic way has become a very important task nowadays.As people upload their photos in social media,they need the photos to look great.Besides Coding,I also have the ability to edit your photos in a way your viewers will love to see!                    
+                    </p>
+                </div>
+                <!--
+                <div class="relative flex flex-col items-center text-center bg-gray-800 bg-opacity-60 backdrop-filter backdrop-blur-md shadow-lg rounded-lg p-6 space-y-5 w-8/12">
+                    <h3 class="text-pink-500 text-xl font-semibold">Web Development</h3>
+                    <i class="fas fa-code text-7xl bg-gradient-to-b from-blue-400 to-blue-600 text-transparent bg-clip-text"></i>
+                    <p class="lg:px-10">
+                        Web development is the building and maintenance of websites; it's the work that happens behind the scenes to make a website look great, work fast and perform well with a seamless user experience. Web developers, or 'devs', do this by using a variety of coding languages.
+                    </p>
+                </div>
+                -->
+           </div>
+       </section>
+       <section id="skills" class="flex flex-col p-5 items-center justify-center bg-gray-900">
+            <h1 class="relative font-semibold text-2xl text-gray-200 p-5 mb-16 rounded-md shadow-md bg-gray-900 bg-opacity-60 backdrop-filter backdrop-blur-md">
+                __My Skills__
+            </h1>
+            <div class="w-full space-y-10" id="meters">
+                <div id="html" class="flex flex-col items-center justify-center space-y-2 w-full">
+                    <i class="text-lg w-10/12 fab fa-html5 text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-yellow-600">
+                        <h2 class="inline font-thin">HTML</h2>
+                    </i>
+                    <div class="relative w-10/12 h-1.5 rounded-full bg-gray-700">
+                        <span class="absolute w-11/12 h-full bg-gradient-to-r from-red-500 to-yellow-600"></span>
+                    </div>
+                </div>
+                <div id="css" class="flex flex-col items-center justify-center space-y-2 w-full">
+                    <i class="text-lg w-10/12 fab fa-html5 text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-blue-400">
+                        <h2 class="inline font-thin">CSS</h2>
+                    </i>
+                    <div class="relative w-10/12 h-1.5 rounded-full bg-gray-700">
+                        <span class="absolute w-10/12 h-full bg-gradient-to-r from-blue-700 to-blue-400"></span>
+                    </div>
+                </div>
+                <div id="javascript" class="flex flex-col items-center justify-center space-y-2 w-full">
+                    <i class="text-lg w-10/12 fab fa-html5 text-transparent bg-clip-text bg-gradient-to-r from-yellow-700 to-yellow-400">
+                        <h2 class="inline font-thin ">JavaScript</h2>
+                    </i>
+                    <div class="relative w-10/12 h-1.5 rounded-full bg-gray-700">
+                        <span class="absolute w-6/12 h-full bg-gradient-to-r from-yellow-700 to-yellow-400"></span>
+                    </div>
+                </div>
+                <div id="python" class="flex flex-col items-center justify-center space-y-2 w-full">
+                    <i class="text-lg w-10/12 fab fa-python text-transparent bg-clip-text bg-gradient-to-r from-blue-700 to-yellow-400">
+                        <h2 class="inline font-thin">Python</h2>
+                    </i>
+                    <div class="relative w-10/12 h-1.5 rounded-full bg-gray-700">
+                        <span class="absolute w-2/12 h-full bg-gradient-to-r from-blue-700 to-yellow-400"></span>
+                    </div>
+                </div>
+                <div id="photoshop" class="flex flex-col items-center justify-center space-y-2 w-full">
+                    <i class="text-lg w-10/12 fas fa-camera-retro text-transparent bg-clip-text bg-gradient-to-r from-red-500 to-indigo-500">
+                        <h2 class="inline font-thin">Photoshop</h2>
+                    </i>
+                    <div class="relative w-10/12 h-1.5 rounded-full bg-gray-700">
+                        <span class="absolute w-8/12 h-full bg-gradient-to-r from-red-500 to-indigo-500"></span>
+                    </div>
+                </div>
+            </div>
+       </section>
+   </main>
+    <script src="app.js"></script>
+</body>
+</html>
